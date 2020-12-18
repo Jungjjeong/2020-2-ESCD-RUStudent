@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %} {% block content %}
+<section class="container">
+	<h1>Add Foods(그루터기)</h1>
+	<form  method="POST" action="{{url_for('add_foods_groot')}}" class="add-edit-form">
+    {{ form.hidden_tag() }}
+		<div class="row">
+			<!--title-->
+			<div class="form-group col-md-12">
+				<i class="fas fa-utensils"></i>
+				<label for="title">title:</label>
+            {{ form.title(id="title", class="form-control") }}
+			</div>
+			<!-- description-->
+			<div class="form-group col-md-12">
+				<i class="fas fa-utensils"></i>
+				<label for="description"> description:</label>
+            {{ form.description(id="description", class="form-control") }}
+            </div>
+            <!-- price-->
+			<div class="form-group col-md-12">
+				<i class="fas fa-utensils"></i>
+				<label for="price"> price:</label>
+            {{ form.price(id="price", class="form-control") }}
+			</div>
+			<!-- Ingredients-->
+			<div class="form-group col-md-12">
+				<i class="fas fa-utensils"></i>
+				<label for="ingredients">Ingredients:</label>
+            {{ form.ingredients(id="ingredients", class="form-control") }}
+			</div>
+			<!-- Url-->
+			<div class="form-group col-md-12">
+				<i class="fas fa-image"></i>
+				<label for="url">url:</label> 
+            {{ form.url(id="url", class="form-control", placeholder="Provide URL for food image") }}
+			</div>
+			<!-- Submit-->
+			<div class="form-group col-md-12">
+            {{ form.submit(id="submit", class="form-control btn btn-success") }}
+            </div>
+		</div>
+	</form>
+</section>
+{% endblock %}

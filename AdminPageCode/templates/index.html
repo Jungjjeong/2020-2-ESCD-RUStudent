@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <title>Study</title>
+ <meta charset="utf-8">
+</head>
+<body>
+    <div style="text-align : center;">
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5787%2F2020%2F03%2F12%2F0000002184_001_20200312153655514.jpg&type=sc960_832">
+    </div>
+</body>
+</html>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form method=POST action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Log In</button>
+            </form>
+            <br>
+            <div>
+                Don't have an account? <a href="{{ url_for('register') }}">이곳을 클릭! (가입하기)</a>.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

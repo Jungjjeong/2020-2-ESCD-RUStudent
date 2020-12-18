@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  padding: 2rem;
+  margin-top: 6rem;
+  text-align: center;
+  text-shadow: 0 0 2px #fd7e14;
+  text-transform: capitalize;
+}
+
+h2, h3 {
+  font-family: 'Lora', serif;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.img-thumbnail {
+  display: block;
+  width: 100%;
+  height: 30vh;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+
+.navbar {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-right: 2rem;
+}
+
+.navbar-brand {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  font-family: 'Lora', serif;
+  color: #EB6864!important;
+}
+
+.nav-link {
+  color: #EB6864!important;
+}
+
+.nav-link:hover {
+  color: #aaaaaa!important;
+}
+
+/* Home page */
+
+.hero-image {
+  background-image: url(../images/cookingBoard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 85vh;
+}
+
+#title {
+  font-size: 5rem;
+}
+
+.index {
+  margin-top: 6rem;
+}
+
+.quote {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 3rem;
+}
+
+/* Login & Register page */
+
+#login, #register {
+  background-image: -o-radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/colourfulFood.jpg);
+  background-image: radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/colourfulFood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 85vh;
+}
+
+.form-signin, .form-register {
+  max-width: 30rem;
+  padding-top: 2.5rem;
+  margin: auto;
+}
+
+form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.loginBtn, .registerBtn {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 4rem;
+}
+
+.loginBtn {
+  margin-top: 3rem;
+}
+
+.register-loginLink {
+  margin-top: 1rem;
+}
+
+/* Add/Edit Recipe Page */
+
+.add-edit-form {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: -o-radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/food.jpg);
+  background-image: radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url(../images/food.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-control {
+  border: 2px solid #EB6864;
+}
+
+label {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.fas {
+  font-size: 1.5rem;
+}
+
+/* Recipe Page */
+
+#singleRecipe {
+  max-width: 40rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Footer */
+
+.page-footer {
+  text-align: center;
+}
+
+.media-icons {
+  font-size: 3rem;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+/* Pixal */
+
+@media only screen and (min-width: 411px) and (max-height: 823px) {
+  .index {
+    margin-top: 1rem;
+  }
+  #title {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
+    color: #fff;
+    margin-bottom: 0rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .form-signin, .form-register {
+    padding-top: 0rem;
+  }
+  #register {
+    height: 105vh;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-height: 731px) and (orientation: landscape) {
+  #login {
+    height: 225vh;
+  }
+  .hero-image {
+    height: 98vh;
+  }
+  .btn {
+    font-size: 1.3rem;
+    width: 30%;
+  }
+}
+
+/* Samsung Galaxy S5*/
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .index {
+    margin-top: 0rem;
+  }
+  #title {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
+    color: #fff;
+    margin-bottom: 0rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .media-icons {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+  #title {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .quote {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0rem;
+    margin-top: 0rem;
+  }
+  .media-icons, small {
+    font-size: 1rem;
+  }
+}
+
+/* Iphone 5*/
+
+@media only screen and (min-width: 320px) and (max-height: 568px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  .index {
+    margin-top: 0rem;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
+    color: #fff;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .media-icons {
+    font-size: 1.5rem;
+  }
+  #login {
+    height: 100vh;
+  }
+  .form-signin {
+    padding-top: 0rem;
+  }
+  h1 {
+    padding: 1rem;
+  }
+  #register {
+    height: 135vh;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) {
+  .index {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  #title {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 3.8rem;
+  }
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+  .quote {
+    margin-bottom: 0rem;
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .media-icons {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  small {
+    font-size: 0.8rem;
+  }
+  #register {
+    height: 210vh;
+  }
+}
+
+/* Iphone 6,7,8*/
+
+@media only screen and (min-width: 375px) and (max-height: 667px) {
+  h1 {
+    margin-top: 7rem;
+  }
+  .index {
+    margin-top: 3rem;
+  }
+  #title {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
+    color: #fff;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+  }
+  .form-signin, .form-register {
+    padding-top: 0rem;
+  }
+  h1 {
+    padding: 1rem;
+  }
+  #register {
+    height: 111vh;
+  }
+}
+
+/* Iphone 6,7,8*/
+
+@media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) {
+  #register {
+    height: 185vh;
+  }
+  #login {
+    height: 150vh;
+  }
+}
+
+/* Iphone X*/
+
+@media only screen and (min-width: 375px) and (max-height: 812px) {
+  h1 {
+    margin-top: 7rem;
+  }
+  .index {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  #title {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .quote {
+    background: rgba(33, 33, 33, 0.7);
+    color: #fff;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .form-signin, .form-register {
+    padding-top: 0rem;
+  }
+  h1 {
+    padding: 1rem;
+  }
+  #login {
+    height: 75vh;
+  }
+  #register {
+    height: 92vh;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-height: 812px) and (orientation: landscape) {
+  .btn {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+/* IPad landscape */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .btn {
+    font-size: 2rem;
+  }
+  #login {
+    height: 95vh;
+  }
+  #register {
+    height: 120vh;
+  }
+}

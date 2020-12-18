@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+	<h1>MENU(상록원)</h1>
+	<div class="row">
+        <form method=POST action="{{ url_for('foods') }}">
+            {% for c  in context %}
+             {{c.title}}({{c.price}})
+             
+             <hr>
+            {% endfor %}
+        </form>
+        <a class="btn btn-success btn-warning" href="{{url_for('add_foods')}}"role="button">추가</a>
+        <a class="btn btn-success btn-warning" href="{{url_for('delete_foods')}}"role="button">삭제</a>
+        <a class="btn btn-success btn-warning" href="{{url_for('comments')}}" role="button">리뷰보기</a>
+      
+        <button onClick="history.go(-1);">뒤로가기</button >
+
+    </div>
+</div>
+{% endblock %}

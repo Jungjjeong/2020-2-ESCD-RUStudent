@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+	<h1>Payments</h1>
+	<div class="row">
+        <form method=POST action="{{ url_for('payments') }}">
+            {% for c  in context %}
+            음식 이름:{{c.name}}, 가격:{{c.price}}, 총 가격:{{c.totalprice}}, 주문한 음식 개수:{{c.num}}, 주문자:{{c.nickname}}
+             <hr>
+            {% endfor %}
+        </form>
+      
+      
+        <button onClick="history.go(-1);">뒤로가기</button >
+
+    </div>
+</div>
+{% endblock %}

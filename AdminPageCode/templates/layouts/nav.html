@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<a class="navbar-brand" href="{{url_for('index')}}"><i class="fas fa-utensils"></i> 추가 기능</a> <button aria-label="Toggle" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button"><i class="fas fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            {% if session.username %}
+        </li>
+    
+        <li style="list-style: none">
+            {% endif %}
+        </li>
+        </ul>
+    </div>
+</nav>
