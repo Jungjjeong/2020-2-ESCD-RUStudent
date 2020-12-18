@@ -1,32 +1,16 @@
-# wxapp-mall
-微信小程序 商城（uni-app 版本的代码请看[uni分支](https://github.com/lin-xin/wxapp-mall/tree/uni)，可打包成APP、小程序、H5）
+# 2020년도 기업사회맞춤형프로젝트2_3조_RUStudent?
+2020 2학기 동국대학교 기업사회맞춤형프로젝트 
+유학생을 위한 학내 식당, 카페 Wechat 결제 미니프로그램 구현
 
-## 相关
-文章：[微信小程序之购物车功能](https://github.com/lin-xin/blog/issues/14)
+## 개발 목적
+Wechat MiniProgram을 이용하여 유학생의 학내 식당, 카페에서의 간편 주문 + Wechat Pay 결제 기능 제공.
 
-## 前言
-无意中在慕课网看到一个小程序商城的视频教程，居然要收388元，真是太贵了。看到上面已经贴了个小程序二维码demo，既然有了，那就来照着做一个练练手吧。
+## 개발 도구
+Wechat MiniProgram Developer Tools
 
-## 功能
-- [x] 首页
-- [x] 搜索
-- [x] 分类
-- [x] 购物车
-- [x] 个人中心
-- [x] 商品列表
-- [x] 商品详情
-- [x] 订单
-- [x] 地址管理
-
-## 实现效果
-![image](https://raw.githubusercontent.com/lin-xin/mini-apps-mall/master/image/1.jpg) 
-![image](https://raw.githubusercontent.com/lin-xin/mini-apps-mall/master/image/2.jpg) 
-![image](https://raw.githubusercontent.com/lin-xin/mini-apps-mall/master/image/3.jpg) 
-![image](https://raw.githubusercontent.com/lin-xin/mini-apps-mall/master/image/4.jpg) 
-![image](https://raw.githubusercontent.com/lin-xin/mini-apps-mall/master/image/5.jpg) 
-![image](https://raw.githubusercontent.com/lin-xin/mini-apps-mall/master/image/6.jpg) 
-
-## 运行
-需要安装有微信开发者工具。
-把项目下载到本地。
-在微信开发者工具中打开该项目则可预览。
+## 팀원
+- [x] 서예현
+- [x] 배성규
+- [x] 정지영
+- [x] 우승제
+- [x] 황채환
