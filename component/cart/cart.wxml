@@ -1,0 +1,30 @@
+<view class="main">
+    <view wx:if="{{hasList}}">
+        <view class="cart-box">
+            <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
+                <!--<icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}"  class="cart-pro-select" bindtap="selectList"/>-->
+                <!-- <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList"/> -->
+                <navigator url="../details/details?id={{index}}"><image class="cart-thumb" src="{{item.url}}"></image></navigator>
+                <text class="cart-pro-name">{{item.name}}</text>
+                <text class="cart-pro-price">{{item.price}}₩</text>
+                <view class="cart-count-box">
+                    <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+                    <text class="cart-count-num">{{item.num}}</text>
+                    <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+                </view>
+                <text class="cart-del" bindtap="deleteList" data-index="{{index}}">×</text>
+            </view>
+        </view>
+
+        <view class="cart-footer">
+            <image wx:if="{{selectAllStatus}}" src="/image/trash.png" class="total-select" bindtap="selectAll"/>
+            <image wx:else type="circle" src="/image/trash.png" class="total-select" bindtap="selectAll"/>
+            <view class="order-icon">
+                <navigator url="../orders/orders"><image src="/image/icon3.png"></image></navigator>
+            </view>
+            <text>腾出(Empty)</text>
+            <text class="cart-toatl-price">{{totalPrice}}₩</text>
+        </view>
+    </view>
+    <view wx:else></view>
+</view>

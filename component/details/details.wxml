@@ -1,0 +1,62 @@
+<view class="main">
+    <view class="goods-box"> 
+        <image src="{{goods[id].url}}" class="goods-thumb"></image>
+        <navigator open-type="switchTab" url="../cart/cart">
+            <view class="carts-icon {{scaleCart?'on':''}}" >
+                <image src="/image/cart2.png"></image>
+                <text class="carts-icon-num" wx:if="{{hasCarts}}">{{totalNum}}</text>
+            </view>
+        </navigator>
+        
+        
+        <view class="goods-operation">
+            <text class="goods-operation-num">数量  {{num}}</text>
+            <text class="goods-operation-add" bindtap="addCount">+</text>
+            <text class="goods-to-cart" bindtap="addToCart">菜篮子</text>
+            <image src="/image/cart1.png"  class="goods-cart-img" bindtap="addToCart"></image>
+        </view>
+        <view wx:if="true">
+            <image wx:if="{{show}}" src="/image/cart1.png" class="to-carts-icon"></image>
+            <view class="goods-title" bindtap="compare" wx:if="{{total == 5}}">
+                <image src="/image/5점.PNG" class="star"></image></view>
+            <view class="goods-title" wx:if="{{total == 4}}" id="{{goods.id}}">
+                <image src="/image/4점.PNG" class="star"></image></view>
+            <view class="goods-title" wx:if="{{total == 3}}" id="{{goods.id}}">
+                <image src="/image/3점.PNG" class="star"></image></view>
+            <view class="goods-title" wx:if="{{total == 2}}" id="{{goods.id}}">
+                <image src="/image/2점.PNG" class="star"></image></view>
+            <view class="goods-title" wx:if="{{total == 1}}" id="{{goods.id}}">
+                <image src="/image/1점.PNG" class="star"></image></view>
+            <view class="goods-title">{{goods[id].title}}</view>
+            <view class="goods-price">{{goods[id].price}}₩</view>
+        </view>
+    </view>
+    <view wx:if="item.id" class="goods-tab-box" data-id="{{goods[id].id}}">
+        <view class="goods-tab-nav {{curIndex === 0 ?'on':''}}" bindtap="bindTap" data-index="0">菜单说明</view>
+        <view class="goods-tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">成分表</view>
+        <view class="goods-tab-nav {{curIndex === 2 ?'on':''}}" bindtap="bindTap" data-index="2">评论</view>
+        <view class="goods-content">
+            <view wx:if="{{curIndex === 0}}" id="{{goods.id}}">{{goods[id].description}}</view>
+            <view wx:if="{{curIndex === 1}}">{{goods[id].ingredient}}</view>
+            <view wx:if="{{curIndex === 2}}">
+                <!--
+                      <view class="item-title"> {{inputValue}}</view>
+                        <input class="ui-input" maxlength="20" bindinput="bindKeyInput" placeholder="리뷰를 작성해주세요"/>
+                --> 
+                <form bindsubmit="formSubmit" bindreset="formReset">
+                    <view class="section">
+                        <input name="inputscore" placeholder="请用数字写出评分(1-5)" />
+                        <input name="input" placeholder="请写一下评论 :)" />
+                    </view>
+                    <view>
+                        <button form-type="submit" class="btn-area">Submit</button>
+                        <!--<button form-type="reset">Reset</button>-->
+                    </view>
+                 </form>
+                    <view wx:for="{{review}}" id="{{goods.id}}">
+                        <view wx:if="{{item.parent_id === goods[id]._id}}" class = "myReview">**** : {{item.contents}}</view>
+                    </view>
+            </view>
+        </view>
+    </view>
+</view>

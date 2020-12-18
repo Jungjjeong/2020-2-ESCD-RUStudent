@@ -1,0 +1,10 @@
+<view class="main">
+    <view class="form-box">
+        <form bindsubmit="formSubmit">
+            <input value="{{address.name}}" name="name" placeholder="주문자 성함"/>
+            <input type="number" name="phone" value="{{address.phone}}" placeholder="전화번호"/>
+            <input name="detail" value="{{address.detail}}" placeholder="요청 사항"/>
+            <button form-type="submit">저장</button>
+        </form>
+    </view>
+</view>

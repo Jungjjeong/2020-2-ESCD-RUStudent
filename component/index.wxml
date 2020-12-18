@@ -1,0 +1,78 @@
+<view class="main">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    
+    <view class="selected">
+        <view class="select-title"><text>推荐菜(Recommended Menu)</text></view>
+        <view class="select-top">
+            <view id="sangrokone 0" class="select-top-small" bindtap="goToDetail">
+                    <image src="{{showmenu[0].url}}" ></image>
+            </view>
+            <view class="select-top-small">
+                <view id="sangrokone 1" class="select-top-small" bindtap="goToDetail">
+                    <image src="{{showmenu[1].url}}" ></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="newest">
+        <view class="newest-title"><text>菜单</text></view>
+        <view class="newest-box">
+            <view class="newest-list">
+                <navigator url="category/category?res_id=sangrok&cur_id=1">
+                    <image src="/image/ramen.png"></image>
+                    <view class="newest-text"><text>常绿园</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=dormitory&cur_id=1">
+                    <image src="/image/eat1.png"></image>
+                    <view class="newest-text"><text>宿舍食堂</text></view>
+                    
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=groo&cur_id=2">
+                    <image src="/image/eat2.png"></image>
+                    <view class="newest-text"><text>咕咚咕噜</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=garden&cur_id=3">
+                    <image src="/image/spaguetti.png"></image>
+                    <view class="newest-text"><text>园丁</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=namsan&cur_id=4">
+                    <image src="/image/coffee2.png"></image>
+                    <view class="newest-text"><text>南山哈卡萨</text></view>
+                    <view class="newest-text"><text>咖啡馆</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=pen&cur_id=5">
+                    <image src="/image/coffee2.png"></image>
+                    <view class="newest-text"><text>淫妇</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=gaon&cur_id=6">
+                    <image src="/image/coffee2.png"></image>
+                    <view class="newest-text"><text>高努里</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="category/category?res_id=blue&cur_id=7">
+                    <image src="/image/coffee2.png"></image>
+                    <view class="newest-text"><text>蓝罐子</text></view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

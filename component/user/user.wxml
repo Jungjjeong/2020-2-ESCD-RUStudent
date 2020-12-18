@@ -1,0 +1,27 @@
+<view class="main">
+    <view class="header">
+        <image src="{{thumb}}" class="thumb"></image>
+        <text class="nickname">{{nickname}}</text>
+        <text class="about">结算完毕</text>
+    </view>
+    <view class="address-box">
+    
+    </view>
+    <view class="orders-box">
+        <view class="orders">订货明细</view>
+        <view class="orders-list" wx:for="{{orders}}" wx:key="{{index}}">
+            <view class="orders-number">订货时间 : {{item.time}}
+            <view> </view>
+        </view>
+            <view class="orders-detail">
+                <image src="{{item.url}}"></image>
+                <view class="">{{item.name}}</view>
+                <view class="">{{item.num}}</view>
+            </view>
+            <view>
+                <text class="orders-footer">款子：{{item.price}}</text>
+
+            </view>
+        </view>
+    </view>
+</view>
