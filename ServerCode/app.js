@@ -60,4 +60,4 @@ mongoose.connect(
     console.log('connected to db')
 })
 
-app.listen(port);   //port 추후에 바꿔져야함
+app.listen(port);   //port는 hosting 되는 경우 그 server에 맞는 port로 변경
