@@ -6,6 +6,11 @@
 - 프로젝트 기간: 2020.08.31-2020.12.14
 - Team. RUStudent?
 
+## 🏆 수상 내역(Award)
+2020년 2학기 기업사회맞춤형프로젝트2 강좌 수석
+<br>(1st place in Enterprise & Society Tailored Capstone Design Project, Dongguk University, 2021)
+
+
 # 개발 목적
 
 > Wechat MiniProgram을 이용하여 유학생의 학내 식당, 카페에서의 간편 주문 + Wechat Pay 결제 기능 제공
