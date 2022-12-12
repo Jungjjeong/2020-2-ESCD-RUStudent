@@ -67,5 +67,5 @@
 ![동급식](https://user-images.githubusercontent.com/72294509/136493122-86833a1e-db74-484c-9bcf-37bb1823d3db.JPG)
 
 - [x] [Jungjjeong](https://github.com/Jungjjeong)<br>
-- [x] [justbeaver97](https://github.com/justbeaver97)<br>
+- [x] [yehyunsuh](https://github.com/yehyunsuh)<br>
 - [x] [icankok](https://github.com/icankok)
